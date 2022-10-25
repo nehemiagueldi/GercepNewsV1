@@ -1,0 +1,18 @@
+.footer{
+    background-color: white;
+    -webkit-box-shadow: 10px 10px 15px 1px rgba(118,28,255,0.29); 
+    box-shadow: 10px 10px 15px 1px rgba(118,28,255,0.29);
+    height: 50px;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    font-family: 'Lemon';
+    margin-top: 4rem;
+
+    -webkit-box-shadow: 10px -10px 15px 1px rgba(118,28,255,0.29); 
+    box-shadow: 10px -10px 15px 1px rgba(118,28,255,0.29);
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}

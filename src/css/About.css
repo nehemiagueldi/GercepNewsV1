@@ -1,0 +1,112 @@
+.about{
+    font-family: 'Lemon';
+}
+  
+h2{
+    font-size: 4rem;
+}
+@import url(https://fonts.googleapis.com/css?family=Sigmar+One);
+
+/* pokemone pictures */
+
+.pokemon {
+  width: 400px;
+  height: 400px;
+  /* center content using flex box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overlay */
+  box-shadow: 0 0 0 200px inset, 0 0 5px grey;
+  /* hover out transition */
+  transition: box-shadow 1s;
+  float: left;
+  margin: 10px;
+}
+
+
+/* pokemone names */
+
+.pokemon::after {
+  width: 80%;
+  height: 80%;
+  display: block;
+  white-space: pre;
+  font: 15pt 'sigmar one';
+  color: white;
+  border: 2px solid;
+  text-align: center;
+  /* center content using flex box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* hover out transition */
+  transition: opacity 1s .5s;
+}
+
+
+/* reveal pokemone picture on hover */
+
+.pokemon:hover {
+  box-shadow: 0 0 0 5px inset, 0 0 5px grey, 0 0 10px grey inset;
+  transition: box-shadow 1s;
+}
+
+
+/* hide pokemone name on hover */
+
+.pokemon:hover::after {
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+#bulbasaur {
+  background-image: url('../image/joen.jpg');
+  color: rgba(71, 121, 94, .9);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#bulbasaur::after {
+  content: 'Joanne Kessie';
+}
+
+#charmander {
+  background-image: url('../image/pael.jpg');
+  color: rgba(221, 86, 63, .9);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#charmander::after {
+  content: 'Raphael Gregorius'
+}
+
+#squirtle {
+  background-image: url('../image/nehe.jpg');
+  color: rgba(65, 102, 114, .9);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#squirtle::after {
+  content: 'Nehemia Gueldi'
+}
+
+#pikachu {
+  background-image: url(http://vignette2.wikia.nocookie.net/pokemon/images/0/0d/025Pikachu.png/revision/latest/scale-to-width-down/200?cb=20140328192412);
+  color: rgba(179, 152, 98, .9);
+}
+
+#pikachu::after {
+  content: 'Pikachu'
+}
+
+#wrapper {
+  width: 500px;
+  height: 500px;
+  margin:  auto;
+}
